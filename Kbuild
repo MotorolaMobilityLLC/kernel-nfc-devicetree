@@ -25,13 +25,15 @@ dtbo-y += st/cliffs-nfc.dtbo \
 endif
 
 ifeq ($(CONFIG_ARCH_BLAIR),y)
+
 dtbo-y += nxp/blair-nfc.dtbo \
           nxp/blair-nfc-atp.dtbo \
           nxp/blair-nfc-cdp.dtbo \
           nxp/blair-nfc-mtp.dtbo \
           nxp/blair-nfc-qrd.dtbo
-
 endif
+
+dtbo-$(CONFIG_MALMO_DTB) += nxp/blair-nfc-malmo.dtbo
 
 ifeq ($(CONFIG_ARCH_HOLI),y)
 dtbo-y += nxp/holi-nfc.dtbo \
