@@ -41,7 +41,6 @@ endif
 
 ifeq ($(CONFIG_ARCH_PITTI),y)
 dtbo-y += nxp/pitti-nfc.dtbo \
-          nxp/pitti-qrd-nfc.dtbo \
           nxp/pitti-nfc-atp.dtbo \
           nxp/pitti-nfc-idp.dtbo \
           nxp/pitti-nfc-qrd.dtbo

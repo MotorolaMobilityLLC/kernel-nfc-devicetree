@@ -17,8 +17,8 @@
 		interrupts = <104 0>;
 		interrupt-names = "nfc_irq";
 		pinctrl-names = "nfc_active", "nfc_suspend";
-		pinctrl-0 = <&nfc_int_active &nfc_enable_active>;
-		pinctrl-1 = <&nfc_int_suspend &nfc_enable_suspend>;
+		pinctrl-0 = <&nfc_qrd_int_active &nfc_qrd_enable_active>;
+		pinctrl-1 = <&nfc_qrd_int_suspend &nfc_qrd_enable_suspend>;
 		/*clocks = <&rpmcc RPM_SMD_RF_CLK3>;
 		clock-names = "nfc_ref_clk";*/
 	};

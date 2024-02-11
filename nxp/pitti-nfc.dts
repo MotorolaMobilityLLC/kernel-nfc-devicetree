@@ -3,8 +3,8 @@
 
 #include "pitti-nfc-common-pinctrl.dtsi"
 / {
-	model = "Qualcomm Technologies, Inc. Pitti SoC";
+	model = "Qualcomm Technologies, Inc. Pitti";
 	compatible = "qcom,pitti";
 	qcom,msm-id = <623 0x10000>;
-	qcom,board-id = <33 0>, <34 0>;
+	qcom,board-id = <0 0>;
 };
