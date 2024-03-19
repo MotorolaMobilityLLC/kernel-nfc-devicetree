@@ -10,6 +10,7 @@
 		qcom,sn-irq = <&tlmm 104 0x00>;
 		qcom,sn-ven = <&tlmm 103 0x00>;
 		qcom,sn-firm = <&tlmm 101 0x00>;
+		qcom,sn-clkreq = <&tlmm 102 0x00>;
 		qcom,clk-src = "BBCLK2";
 		qcom,sn-szone = "enable";
 		interrupt-parent = <&tlmm>;
