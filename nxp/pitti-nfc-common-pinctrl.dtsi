@@ -32,13 +32,13 @@
 
 		nfc_enable_active: nfc_enable_active {
 			mux {
-				/* Enable and Firmware gpios */
-				pins = "gpio40", "gpio42";
+				/* Enable, Firmware, clock gpios*/
+				pins = "gpio40", "gpio42", "gpio41";
 				function = "gpio";
 			};
 
 			config {
-				pins = "gpio40", "gpio42";
+				pins = "gpio40", "gpio42", "gpio41";
 				drive-strength = <2>; /* 2 MA */
 				bias-disable;
 			};
@@ -46,12 +46,12 @@
 
 		nfc_enable_suspend: nfc_enable_suspend {
 			mux {
-				pins = "gpio40", "gpio42";
+				pins = "gpio40", "gpio42", "gpio41";
 				function = "gpio";
 			};
 
 			config {
-				pins = "gpio40", "gpio42";
+				pins = "gpio40", "gpio42", "gpio41";
 				drive-strength = <2>; /* 2 MA */
 				bias-disable;
 			};
@@ -88,13 +88,13 @@
 
 		nfc_qrd_enable_active: nfc_qrd_enable_active {
 			mux {
-				/* Enable and Firmware gpios */
-				pins = "gpio103", "gpio101";
+				/* Enable, Firmware, clock gpios */
+				pins = "gpio103", "gpio101", "gpio102";
 				function = "gpio";
 			};
 
 			config {
-				pins = "gpio103", "gpio101";
+				pins = "gpio103", "gpio101", "gpio102";
 				drive-strength = <2>; /* 2 MA */
 				bias-disable;
 			};
@@ -102,12 +102,12 @@
 
 		nfc_qrd_enable_suspend: nfc_qrd_enable_suspend {
 			mux {
-				pins = "gpio103", "gpio101";
+				pins = "gpio103", "gpio101", "gpio102";
 				function = "gpio";
 			};
 
 			config {
-				pins = "gpio103", "gpio101";
+				pins = "gpio103", "gpio101", "gpio102";
 				drive-strength = <2>; /* 2 MA */
 				bias-disable;
 			};

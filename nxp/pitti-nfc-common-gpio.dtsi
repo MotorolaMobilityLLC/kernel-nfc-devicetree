@@ -2,7 +2,6 @@
 
 &qupv3_se1_i2c {
 	status = "ok";
-	qcom,clk-freq-out = <1000000>;
 	#address-cells = <1>;
 	#size-cells = <0>;
 	nq@28 {
@@ -11,6 +10,7 @@
 		qcom,sn-irq = <&tlmm 43 0x00>;
 		qcom,sn-ven = <&tlmm 40 0x00>;
 		qcom,sn-firm = <&tlmm 42 0x00>;
+		qcom,sn-clkreq = <&tlmm 41 0x00>;
 		qcom,clk-src = "BBCLK2";
 		qcom,sn-szone = "enable";
 		interrupt-parent = <&tlmm>;
