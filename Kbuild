@@ -46,6 +46,10 @@ dtbo-y += nxp/pitti-nfc.dtbo \
           nxp/pitti-nfc-qrd.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_VOLCANO), y)
+dtbo-y += nxp/volcano-nfc.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
