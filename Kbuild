@@ -48,6 +48,14 @@ endif
 
 ifeq ($(CONFIG_ARCH_VOLCANO), y)
 dtbo-y += nxp/volcano-nfc.dtbo
+
+dtbo-y += st/volcano6i-idp-wcd9395-brahma-overlay-nfc.dtbo \
+          st/volcano6i-idp-wcd9395-ganges-overlay-nfc.dtbo \
+          st/volcano6i-mtp-brahma-overlay-nfc.dtbo \
+          st/volcano6i-mtp-ganges-overlay-nfc.dtbo \
+          st/volcano6i-mtp-wcd9395-brahma-overlay-nfc.dtbo \
+          st/volcano6i-mtp-wcd9395-ganges-hac2019-overlay-nfc.dtbo \
+          st/volcano6i-mtp-wcd9395-ganges-overlay-nfc.dtbo
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
