@@ -29,6 +29,10 @@ dtbo-y += nxp/ravelin-nfc.dtbo \
           nxp/ravelin-nfc-atp.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_CANOE), y)
+dtbo-y += st/canoe-nfc.dtbo
+endif
+
 always-y        := $(dtb-y) $(dtbo-y)
 subdir-y        := $(dts-dirs)
 clean-files     := *.dtb *.dtbo
