@@ -30,7 +30,8 @@ dtbo-y += nxp/ravelin-nfc.dtbo \
 endif
 
 ifeq ($(CONFIG_ARCH_CANOE), y)
-dtbo-y += st/canoe-nfc.dtbo
+dtbo-y += st/canoe-nfc.dtbo \
+          nxp/canoe-nfc.dtbo
 endif
 
 always-y        := $(dtb-y) $(dtbo-y)
