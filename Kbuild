@@ -31,7 +31,8 @@ endif
 
 ifeq ($(CONFIG_ARCH_CANOE), y)
 dtbo-y += st/canoe-nfc.dtbo \
-          nxp/canoe-nfc.dtbo
+          nxp/canoe-nfc.dtbo \
+          nxp/canoe-nfc-sn220.dtbo
 endif
 
 always-y        := $(dtb-y) $(dtbo-y)
