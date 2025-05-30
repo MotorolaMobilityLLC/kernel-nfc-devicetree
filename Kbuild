@@ -32,11 +32,17 @@ ifeq ($(CONFIG_ARCH_RAVELIN),y)
 dtbo-y += nxp/ravelin-nfc.dtbo
 endif
 
+ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
+
+dtbo-$(CONFIG_VANTG_DTB) += st/canoe-nfc-vantg-evb.dtbo
+
+else
 ifeq ($(CONFIG_ARCH_CANOE), y)
 dtbo-y += st/canoe-nfc.dtbo \
           nxp/canoe-nfc.dtbo \
           nxp/canoe-nfc-sn220.dtbo
 endif
+endif  #end of CONFIG_MMI_DEVICE_DTBS
 
 ifeq ($(CONFIG_ARCH_YUPIK), y)
 dtbo-y += nxp/yupik-wcn6750-nfc.dtbo
