@@ -37,11 +37,17 @@ dtbo-y += st/malabar-nfc.dtbo \
           nxp/malabar-nfc-sn220.dtbo
 endif
 
+ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
+
+dtbo-$(CONFIG_VANTG_DTB) += st/canoe-nfc-vantg-evb.dtbo
+
+else
 ifeq ($(CONFIG_ARCH_CANOE), y)
 dtbo-y += st/canoe-nfc.dtbo \
           nxp/canoe-nfc.dtbo \
           nxp/canoe-nfc-sn220.dtbo
 endif
+endif  #end of CONFIG_MMI_DEVICE_DTBS
 
 ifeq ($(CONFIG_ARCH_CHORA),y)
 dtbo-y += nxp/chora-nfc.dtbo \
