@@ -19,8 +19,8 @@
 		qcom,sn-clkreq = <&tlmm 35 0x00>;
 		qcom,sn-szone = "enable";
 		interrupt-parent = <&tlmm>;
-                /* nvmem-cells = <&bob1_off_mode_enable>;
-                nvmem-cell-names = "nfc_bob1_cell"; */
+                nvmem-cells = <&bob1_off_mode_enable>;
+                nvmem-cell-names = "nfc_bob1_cell";
 		interrupts = <47 0>;
 		interrupt-names = "nfc_irq";
 		pinctrl-names = "nfc_active", "nfc_suspend";
