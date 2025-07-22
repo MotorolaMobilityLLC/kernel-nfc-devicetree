@@ -40,6 +40,7 @@ endif
 ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
 
 dtbo-$(CONFIG_VANTG_DTB) += st/canoe-nfc-vantg-evb.dtbo
+dtbo-$(CONFIG_BLANC_DTB) += st/canoe-nfc-blanc-evb.dtbo
 
 else
 ifeq ($(CONFIG_ARCH_CANOE), y)
