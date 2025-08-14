@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: BSD-3-Clause
+
+/*
+ * Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+ */
+
+/dts-v1/;
+/plugin/;
+
+#include "alor-nfc-common-vantage-gpios.dtsi"
+/ {
+        model = "vantage";
+        compatible = "qcom,alor";
+        qcom,msm-id = <685 0x10000>;
+        qcom,board-id = <0x41 0xB1B0>;
+};
