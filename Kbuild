@@ -35,7 +35,7 @@ endif
 ifeq ($(CONFIG_MMI_DEVICE_DTBS),y)
 
 dtbo-$(CONFIG_VANTG_DTB) += st/canoe-nfc-vantg-evb.dtbo
-dtbo-$(CONFIG_BLANC_DTB) += st/canoe-nfc-blanc-evb.dtbo
+dtbo-$(CONFIG_BLANC_DTB) += st/alor-nfc-blanc-evb.dtbo
 dtbo-$(CONFIG_VANTAGE_DTB) += st/alor-nfc-vantage-dvb1b.dtbo
 
 else
