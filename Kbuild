@@ -43,6 +43,14 @@ dtbo-y += nxp/yupik-wcn6750-nfc.dtbo
 dtbo-y += nxp/yupik-qca6490-nfc.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_BENGAL),y)
+dtbo-y += nxp/bengal-nfc.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_KHAJE),y)
+dtbo-y += nxp/khaje-nfc.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_ALOR),y)
 dtbo-y += nxp/alor-nfc.dtbo
 dtbo-y += st/alor-nfc.dtbo
