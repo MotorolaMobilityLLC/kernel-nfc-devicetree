@@ -38,6 +38,12 @@ dtbo-y += st/canoe-nfc.dtbo \
           nxp/canoe-nfc-sn220.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_CHORA),y)
+dtbo-y += nxp/chora-nfc.dtbo \
+          st/chora-nfc.dtbo
+endif
+
+
 ifeq ($(CONFIG_ARCH_YUPIK), y)
 dtbo-y += nxp/yupik-wcn6750-nfc.dtbo
 dtbo-y += nxp/yupik-qca6490-nfc.dtbo
