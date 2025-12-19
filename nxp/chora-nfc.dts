@@ -12,5 +12,6 @@
         model = "Qualcomm Technologies, Inc. Chora SoC";
         compatible = "qcom,chora";
         qcom,msm-id = <724 0x10000>, <744 0x10000>;
-        qcom,board-id = <0x20008 0x0>, <0x20001 0x0>, <0x20015 0x0>;
+        qcom,board-id = <0x20008 0x0>, <0x20001 0x0>,
+			<0x20015 0x0>;
 };
