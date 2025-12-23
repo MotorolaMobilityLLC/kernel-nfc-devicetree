@@ -50,8 +50,7 @@ endif
 
 
 ifeq ($(CONFIG_ARCH_YUPIK), y)
-dtbo-y += nxp/yupik-wcn6750-nfc.dtbo
-dtbo-y += nxp/yupik-qca6490-nfc.dtbo
+dtbo-y += nxp/yupik-nfc.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_BENGAL),y)
