@@ -15,6 +15,9 @@
 		qcom,sn-irq = <&tlmm 74 0x00>;
 		qcom,sn-ven = <&tlmm 78 0x00>;
 		qcom,sn-clkreq = <&tlmm 72 0x00>;
+                qcom,sn-vdd-1p8-supply = <&L23B_E0>;
+                qcom,sn-vdd-1p8-voltage = <1080000 1320000>;
+                qcom,sn-vdd-1p8-current = <10000>;
 		qcom,sn-szone = "enable";
 		interrupt-parent = <&tlmm>;
 		interrupts = <74 0>;
