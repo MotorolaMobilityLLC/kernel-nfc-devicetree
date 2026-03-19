@@ -43,6 +43,7 @@ dtbo-$(CONFIG_VANTG_DTB) += st/canoe-nfc-vantg-evb.dtbo
 dtbo-$(CONFIG_BLANC_DTB) += st/alor-nfc-blanc-evb.dtbo
 dtbo-$(CONFIG_VANTAGE_DTB) += st/alor-nfc-vantage-dvb1b.dtbo
 dtbo-$(CONFIG_AVR_DTB) += nxp/alor-nfc-avr-evb.dtbo
+dtbo-$(CONFIG_MAKALU_DTB) += nxp/alor-nfc-makalu-evb.dtbo
 
 else
 ifeq ($(CONFIG_ARCH_CANOE), y)
