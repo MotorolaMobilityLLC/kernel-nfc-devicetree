@@ -7,10 +7,12 @@
 /dts-v1/;
 /plugin/;
 
+#define VANTAGE_RADIO_JAPAN 3
+
 #include "alor-nfc-common-vantage-gpios.dtsi"
 / {
         model = "vantage";
         compatible = "qcom,alor";
         qcom,msm-id = <685 0x10000>;
-        qcom,board-id = <0x41 0xB1B0>, <0x41 0xC000>;
+        qcom,board-id = <0x41 0xB1B0>, <0x41 0xC000>, <(VANTAGE_RADIO_JAPAN <<8 | 0x41) 0xA100>;
 };
