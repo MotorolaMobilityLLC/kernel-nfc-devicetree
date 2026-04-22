@@ -44,7 +44,7 @@ dtbo-$(CONFIG_BLANC_DTB) += st/alor-nfc-blanc-evb.dtbo
 dtbo-$(CONFIG_VANTAGE_DTB) += st/alor-nfc-vantage-dvb1b.dtbo
 dtbo-$(CONFIG_AVR_DTB) += nxp/alor-nfc-avr-evb.dtbo
 dtbo-$(CONFIG_MAKALU_DTB) += nxp/alor-nfc-makalu-evb.dtbo
-
+dtbo-$(CONFIG_ELETRE_DTB) += nxp/alor-nfc-eletre-evb.dtbo
 else
 ifeq ($(CONFIG_ARCH_CANOE), y)
 dtbo-y += st/canoe-nfc.dtbo \
